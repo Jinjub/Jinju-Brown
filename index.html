@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinju-Brown</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7458e503ed.js" crossorigin="anonymous"></script>
+</head>
+</body>
+
+<!-- -------------------------Header----------------------------- -->
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="ImagesJB/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi everyone!<br>I'm <span>Jinju Brown</span></h1>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------About Me----------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <h1 class="subtitle">About Me</h1>
+                <p><span>I am currently a sophmore engineering student at Virginia Polytechnic Institue and State University
+                    majoring in Computer Science and minoring in Real Estate. I am certified in computer-aided 
+                    design software as well as Microsoft. I am interested in working with AI/ML and web development. 
+                    I am involved with many clubs at my school, which allowed me to develop my 
+                    leadership and communication skills.<span></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br> Course: CS 1114 Introduction to Sofware Development</li>
+                            <li><span>Computer-Aided Design</span><br> Certified Autodesk Inventor User</li>
+                            <li><span>Microsoft Office</span><br> Certified Microsoft Office Specialist - Associate</li>
+                            <li><span>HTML</span><br> </li>
+                            <li><span>CSS</span><br> </li>
+                            <li><span>React</span><br> </li>
+                            <li><span>JavaScript</span><br> </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>HackViolet | External Operations | Mentorship Chair</span><br> August 2023 - Present</li>
+                            <li><span>Chinese American Society | Officer Board | Sports Coordinator</span><br> May 2023 - Present</li>
+                            <li><span>Fairfax Park Authority | Front Desk</span><br> August 2021 - Present</li>
+                            <li><span>Kumon Institute Education | Tutor</span><br> August 2021 - May 2022</li>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Virginia Polytechnic Institute and State University</span><br> Minor: Real Estate</li>
+                            <li><span>Hayfield Scondary School</span><br> Advanced Studies Diploma</li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="about-col2">
+                <img src="ImagesJB/Professional Photo.jpg">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ------------------------Portfolio----------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src ="ImagesJB/FemTech23.png">
+                <div class="layer">
+                    <h3>FemTech23</h3>
+                    <p>This website was created for first-year women engineering students to use as a resource page.
+                        Includes over ten different resouces that students can find for academic and emotional support.
+                        Used JavaScript to create the website in a Windows 95 theme.</p>
+                    <a href="https://pierretranva.github.io/hackviolet23/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src ="ImagesJB/Housify.png">
+                <div class="layer">
+                <h3>Housify</h3>
+                    <p>This website was created to make house hunting easier.
+                        Gives the user a way to filter what their prefences are on
+                        a house and swipe if they dislike or like the property that is on the market,
+                        also has a chat feature to get more details of the house.
+                        Used React, JavaScript, CSS, and Material UI to create the website.</p>
+                    <a href="https://pierretranva.github.io/housify/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src ="ImagesJB/Logo2.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                        <p>This website was created to showcase my achievements.
+                            Includes information about what I am interested in working with,
+                            my projects, and a way to contact me.
+                            Used HTML, CSS and JavaScript to create the website.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------------Contact-------------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> jin.brown203@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (703) 399-6939</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jinju-brown" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Jinjub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="ImagesJB/Jinju Brown - Resume.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemen = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemen.style.right = "0";
+    }  
+    function closemenu(){
+        sidemen.style.right = "-200px";
+    }
+    
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykG8lDQCYJPxpHgDwT-PUeYrwZa591OiTGZlX4v3tRiTIHzrMh18462aCEnMWP-3FZ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
